@@ -1,0 +1,915 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&display=swap");
+
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: "Be Vietnam Pro", sans-serif;
+}
+
+:root {
+    --bgOrange: #e84949;
+    --clr-neutral-100: hsl(0, 0%, 100%);
+    --clr-primary-100: hsl(205, 15%, 58%);
+    --clr-primary-400: hsl(215, 25%, 27%);
+    --clr-primary-800: hsl(217, 33%, 17%);
+    --clr-primary-900: hsl(218, 33%, 9%);
+
+}
+
+.wrapper {
+    background-color: #f8faff;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 10px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 725px;
+    background-image: url( https://wallpapers.com/images/hd/travel-wallpaper-s4-wallpaper-ibackgroundwallpaper-9oel6c93nep4tpfd.jpg );
+    background-size: cover;
+    transform-style: preserve-3d;
+    z-index: -1;
+    position: fixed;
+    background-color: rgb(190, 190, 190);
+}
+
+nav ul a {
+    color: black;
+    padding: 12px;
+    text-decoration: none;
+    transition: all 0.5s;
+    font-weight: 800;
+}
+#login i{
+    margin-left: 3px;
+}
+.comp-name {
+    padding: 14px;
+    margin-left: -100px;
+}
+
+.nav-bar {
+    padding: 14px;
+    margin: 15px ;
+    position: relative;
+    right: -120px;
+}
+
+nav ul a:hover {
+    color: var(--bgOrange);
+}
+
+.comp-name h1 span {
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'Brush Script MT', cursive;
+}
+
+.comp-name h1 {
+    font-family: serif;
+    font-size: 60px;
+}
+
+.upper-image-content{
+    position: relative;
+    left: 637px;
+    top: 62px;
+    color: rgb(10, 10, 10);
+    padding:10px;
+}
+
+.upper-image-content h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.upper-image-content h4 {
+    font-size: 60px;
+    margin-bottom: 20px;
+    font-weight: 100;
+    font-family: sans-serif;
+    opacity: 0.8;
+}
+
+.upper-image-content h6 {
+    opacity: 0.7;
+    font-weight: 300;
+    font-size: 20px;
+    font-family: "Poppins", Arial, sans-serif;
+    ;
+}
+
+.form-section {
+    margin-top: 30px;
+    display: flex;
+}
+
+.form-control {
+    height: 60px;
+    width: 300px;
+    padding-left: 30px;
+    border: none;
+    background-color: white;
+}
+
+.where {
+    border-left: 2px solid grey;
+}
+
+.search-btn {
+    height: 60px;
+    width: 130px;
+    font-weight: 400;
+    color: white;
+    background-color: var(--bgOrange);
+}
+
+.browse-high {
+    margin-top: 20px;
+    font-size: 30px;
+    opacity: 0.8;
+}
+
+.browse-history {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.browse-content {
+    display: flex;
+    gap: 15px;
+    background-color: white;
+    height: 50px;
+    width: 150px;
+    color: rgb(115, 110, 110);
+    padding: 15px 20px;
+    transition: all 0.5s;
+}
+
+.browse-content i {
+    color: black;
+}
+
+.browse-content:hover {
+    background-color: var(--bgOrange);
+    color: white;
+    transform: scale(1.1);
+
+}
+
+.promises {
+    display: flex;
+    position: relative;
+    left: 200px;
+    top: 250px;
+    width: 100%;
+    gap: 30px;
+}
+
+.promises-content {
+    background-color: white;
+    width: 260px;
+    padding: 20px;
+    height: 270px;
+    display: block;
+    text-align: center;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+}
+
+.promises-content p {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 10px;
+    font-weight: 200;
+}
+
+.promises-content h2 {
+    margin-left: 5%;
+    margin-top: 50px;
+    font-weight: 400;
+}
+
+.promises-content i {
+    transform: scale(4);
+    color: var(--bgOrange);
+    margin-left: 5%;
+    margin-top: 20px;
+}
+
+.promises-content:hover {
+    background-color: var(--bgOrange);
+    color: white;
+}
+
+.promises-content:hover i {
+    color: white;
+}
+
+.packages {
+    background-color: white;
+    z-index: 100000;
+    position: relative;
+    top: 350px;
+    width: 100%;
+}
+.more{
+    position: relative;
+    bottom: 70px;
+    left: 45%;
+}
+.more a{
+    text-decoration: none;
+    color: black;
+}
+.heading {
+    padding: 40px 0;
+    position: relative;
+    left: 200px;
+}
+
+.heading p {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 30px;
+}
+
+.heading h2 {
+    margin-top: 30px;
+    font-size: 40px;
+}
+
+.tour-place {
+    display: flex;
+    width: 100%;
+    height: 600px;
+    gap: 10px;
+}
+
+.sub-places {
+    background-color: #f8faff;
+    z-index: 100;
+    width: 350px;
+    height: 460px;
+    margin: 20px;
+    border: 2px solid rgba(0, 0, 0, 0.105);
+    transition: all 0.5s ease;
+}
+
+.bg-img {
+    width: 100%;
+    height: 40%;
+    background-size: cover;
+}
+
+.img1 {
+    background-image: url(https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/15/6d/d6/paris.jpg?w=1400&h=1400&s=1);
+}
+
+.img2 {
+    background-image: url(https://media.istockphoto.com/id/1323846766/photo/a-beautiful-view-of-dal-lake-in-winter-srinagar-kashmir-india.jpg?s=612x612&w=0&k=20&c=Dp3peie2t-jdLEmqe4W-DD09GACu2Cr-JjHHeB6rpBc=);
+}
+
+.img3 {
+    background-image: url(https://cdn.britannica.com/61/93061-050-99147DCE/Statue-of-Liberty-Island-New-York-Bay.jpg);
+}
+
+.img4 {
+    background-image: url(https://res.cloudinary.com/hello-tickets/image/upload/c_limit,f_auto,q_auto,w_1300/v1665545877/gbhgmtkef0gnwnnzv6g0.jpg);
+}
+
+.img5 {
+    background-image: url(https://static2.tripoto.com/media/filter/tst/img/1745358/Image/1684222761_image1.jpg.webp);
+}
+.placeinfo{
+   position: relative;
+   padding: 5%;
+}
+.placeinfo h2{
+    font-size: 15px;
+    font-weight: 500;
+}
+.placeinfo h3{
+    position: relative;
+    top:-25px;
+    right: -150px;
+    font-weight: 500;
+    color: blue;
+    font-size: 15px;
+}
+.rating{
+    position: relative;
+    top: -14px;
+}
+.rating i{
+    color: var(--bgOrange);
+}
+.rating span{
+    color: black;
+    font-size: 10px;
+    margin-left: 6px;
+}
+.days{
+    z-index: 23;
+    margin-top: 20px;
+    padding-bottom: 27px;
+    border-bottom: 2px solid rgba(128, 128, 128, 0.445);
+}
+.info{
+    margin-top: 10px;
+    display: flex;
+    font-size: 15px;
+    gap: 15px;
+}
+.btn{
+    position: relative;
+    right: -10px;
+    background-color: green;
+    color: white;
+    width: 80px;
+    height: 30px;
+    padding: 7px;
+    border-radius: 5px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.btn:hover{
+    transform: scale(1.1);
+}
+
+.sub-places:hover{
+    transform: scale(1.2);
+}
+.back-image{
+    width: 100%;
+    height: 800px;
+    background-image: url(https://worldwildschooling.com/wp-content/uploads/2024/01/12-Exotic-Beaches_Navagio-Zakynthos-Greece_evannovostro_Adobe-Stock-Photo_122264479.jpg);
+    background-repeat: no-repeat;
+    z-index: -3;
+}
+
+.upper-color{
+    /* background-image: linear-gradient(90deg, #07e9e298, #5be79a8b);/ */
+    background-color: #2ebdc4 ;
+    opacity: 0.8;
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+}
+.upper-text{
+    position: relative;
+    top: -404px;
+    left: 650px;
+    font-size: 50px;
+    z-index: 11110;
+    color: black;
+    font-family: 'Brush Script MT', cursive;
+}
+.aheive{
+    display: flex;
+    gap: 100px;
+    position: relative;
+    top: -270px;
+    left: 370px;
+}
+.content p{
+    font-family: cursive;
+}
+.hotels{
+    position: relative;
+    top:-120px;
+    background-color: white;
+    z-index: 10;
+    width: 100%;
+    height: 760px;
+}
+.heading h2{
+    font-weight: 200;
+}
+
+.res-img2{
+    background-image: url(https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2a/94/ee/14/exterior-2.jpg?w=1200&h=-1&s=1);
+}
+.res-img1{
+    background-image: url(https://www.cordelia-paris-hotel.com/images_hotel_cordelia_paris/home/hotel-cordelia-paris-1.jpg);
+}
+.res-img3{
+    background-image: url(https://cf.bstatic.com/xdata/images/hotel/max1024x768/313297815.jpg?k=f0967d46c6ad82b18db68f2e3b9c6e25f1317492729e4e66f75aac522813a6d5&o=&hp=1);
+}
+.res-img4{
+    background-image: url(https://images.squarespace-cdn.com/content/v1/52da9677e4b03d314575985a/1450788933347-71MH4HHLXM2S4VQKU5T6/Best+Tokyo+Hotels+with+a+View+-+The+Prince+Park+Tower+Tokyo.jpg?format=1000w);
+}
+.res-img5{
+    background-image: url(https://media.timeout.com/images/105979767/750/562/image.jpg);
+}
+.choose-us{
+    display: flex;
+    width: 1000px;
+    gap: 70px;
+    position: relative;
+    left: 20%;
+}
+.left-part{
+    width: 60%;
+}
+.left-part p{
+    font-weight: 100;
+    margin-bottom:20px;
+}
+.left-part h1{
+    font-weight: 1200;
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+.left-part h1 span{
+    font-weight: 300;
+}
+.right-part{
+    width: 60%;
+}
+.right-part p{
+    font-weight: 100;
+    margin-bottom:20px;
+}
+
+.right-part h1{
+    font-weight: 1200;
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+.right-part h1 span{
+    font-weight: 300;
+}
+.feedback{
+    background-color: rgb(255, 255, 255);
+    width: 30rem;
+    height: 8rem;
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid rgba(128, 128, 128, 0.566);
+}
+.feedback i{
+    transform: scale(2.5);
+    margin-bottom: 20px;
+}
+.feedback h5{
+    display: inline-block;
+    font-size: 15px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.scroller {
+    max-width: 1200px;
+    position: relative;
+    top: 70px;
+    left: 13%;
+    background-color: white;
+    padding: 1rem;
+    height: 650px;
+  }
+  
+  .scroller__inner {
+    position: relative;
+    top: 50px;
+    padding-block: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .scroller[data-animated="true"] {
+    overflow: hidden;
+    -webkit-mask: linear-gradient(
+      90deg,
+      transparent,
+      white 20%,
+      white 80%,
+      transparent
+    );
+    mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+  }
+  
+  .scroller[data-animated="true"] .scroller__inner {
+    width: max-content;
+    flex-wrap: nowrap;
+    animation: scroll var(--_animation-duration, 40s)
+      var(--_animation-direction, forwards) linear infinite;
+  }
+  
+  .scroller[data-direction="right"] {
+    --_animation-direction: reverse;
+  }
+  
+  .scroller[data-direction="left"] {
+    --_animation-direction: forwards;
+  }
+  
+  .scroller[data-speed="fast"] {
+    --_animation-duration: 45s;
+  }
+  
+  .scroller[data-speed="slow"] {
+    --_animation-duration: 60s;
+  }
+  
+  @keyframes scroll {
+    to {
+      transform: translate(calc(-50% - 0.5rem));
+    }
+  }
+
+  .tag-list {
+    margin: 0;
+    padding-inline: 0;
+    list-style: none;
+  }
+  
+  .tag-list li {
+    padding: 1rem;
+    background: var(--clr-primary-400);
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem -0.25rem var(--clr-primary-900);
+  }
+  
+  /* for testing purposed to ensure the animation lined up correctly */
+  .test {
+    background: red !important;
+  }
+  
+.top-images{
+    background-size: cover;
+    height: 400px;
+    width: 350px;
+    border: 1px solid rgba(70, 70, 70, 0.63);
+}
+.top-images div{
+    display: flex;
+    gap: 4rem;
+    color: black;
+    background-color: white;
+    height: 60px;
+    padding:1rem 0 0 0.9rem;
+    font-size: 22px;
+    /* text-align: center; */
+    position: relative;
+    top: 85%;
+    border: none;
+}
+.more-loc{
+    top: 60px;
+    cursor: pointer;
+}
+#top-img1{
+    background-image: url(https://static.toiimg.com/photo/106956234.cms);
+}
+#top-img2{
+    background-image: url(https://res.cloudinary.com/dtljonz0f/image/upload/c_auto,ar_1:1,w_3840,g_auto/f_auto/q_auto/v1/gc-v1/london-pass/attractions/iqeakk7q7xlb5us6diup?_a=BAVARSDW0);
+}
+#top-img3{
+    background-image: url(https://assethub.co.in/wp-content/uploads/2024/02/hyd-ai-city-1024x777-1.jpg);
+}
+#top-img4{
+    background-image: url(https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/15/6d/d6/paris.jpg?w=1400&h=1400&s=1);
+}
+#top-img5{
+    background-image: url(https://travelbird-images.imgix.net/f2/0b/f20bce73731062f021a0c62b7353fa76?auto=compress%2Cformat&crop=faces%2Cedges%2Ccenter&fit=crop&h=1144&upscale=true&w=828);
+}
+
+#top-img6{
+    background-image: url(https://i.pinimg.com/564x/56/1c/11/561c11e7118612d967ce9f79e67e1003.jpg);
+}
+#top-img7{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/The_Kabah_in_the_Grand_Mosque_of_Makkah%2C_Saudi_Arabia_%2852501405646%29.jpg/640px-The_Kabah_in_the_Grand_Mosque_of_Makkah%2C_Saudi_Arabia_%2852501405646%29.jpg);
+}
+#top-img8{
+    background-image:url(https://www.pilgrimagetour.in/blog/wp-content/uploads/2019/02/kedarnath.jpg);
+}
+#top-img9{
+    background-image: url(https://idsb.tmgrup.com.tr/ly/uploads/images/2021/09/19/145613.jpg);
+}
+
+.text-heading{
+    text-align: center;
+    margin-top: 40px;
+}
+.text-heading h1{
+    font-weight: 900;
+    font-size: 40px;
+}
+.text-heading h1 span{
+    font-weight: 400;
+    font-size: 40px;
+
+}
+
+.caf-img1{
+    background-image: url(https://i0.wp.com/paris-society.com/uploads/2023/06/02-Gigi-Paris-Nov-2021_1.jpg?ssl=1&w=1000&quality=85);
+}
+.caf-img2{
+    background-image: url(https://s3.india.com/wp-content/uploads/2024/06/Best-Hill-Top-Restaurants-in-Srinagar.jpg?impolicy=Medium_Widthonly&w=350&h=263) ;
+}
+.caf-img3{
+    background-image: url(https://media.timeout.com/images/105802468/750/562/image.jpg);
+}
+.caf-img4{
+    background-image:url(https://cdn.tatlerasia.com/asiatatler/i/my/2018/11/05150836-thetokyorestaurant-kualalumpur-012_cover_1920x1200.jpg) ;
+}
+.caf-img5{
+    background-image:url(https://media.timeout.com/images/105329891/750/562/image.jpg) ;
+}
+.more-res{
+    bottom: 130px;
+}
+.res{
+    height: 380px;
+}
+.res-info{
+    padding-top: 10px;
+    border-top: 1px solid rgba(128, 128, 128, 0.603);
+    margin-top: 20px;
+}
+.res-rating{
+    margin-top: 20px;
+}
+.back-image-2{
+   height:100px;
+}
+.upper2{
+    height: 450px;
+    background: linear-gradient(135deg, #2ebdc4 0%, #68e5b2 100%);
+    opacity: 1;
+    margin-bottom: 30px;
+}
+
+.up-text{
+    position: relative;
+    left: 0;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 200;
+    color: white;
+}
+.upper-para{
+    position: relative;
+    width: 70%;
+    top: -370px;
+    left: 280px;
+    color: white;
+}
+.upper-para input{
+   position: relative;
+   left: 290px;
+   top: 50px;
+   color: white;
+   background-color: transparent;
+   border: 1px solid white;
+   padding: 20px 40px 20px 40px;
+}
+
+.footer{
+    background-color: #222831;
+    width: 100%;
+    height: 230px;
+    position: relative;
+    /* top:-180px; */
+}
+
+.footlinks {
+    position: relative;
+    left: 40%;
+    top: 20%;
+    margin: 20px;
+}
+.footlinks ul{
+    display: flex;
+    gap: 50px;
+    text-decoration: none;
+    position: relative;
+    left: -6rem;
+    margin-top:30px ;
+}
+.footlinks ul a{
+    color: white;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+.footlinks ul a:hover{
+    transform: scale(1.1);
+
+}
+
+.footlinks h4{
+    color: white;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.social{
+    display: flex;
+    margin-top:30px ;
+    margin-left: -48px;
+    gap: 50px;
+}
+.social a{
+    transform: scale(2);
+    transition: all 0.2s;
+}
+.social a:hover{
+    color: var(--bgOrange);
+}
+
+.end{
+    margin: 40px 0 0 35%;
+    color: #f8faff;
+}
+
+.footer-content{
+    display: flex;
+    gap: 80px;
+    position: relative;
+    left: -15%;
+}
+
+
+
+
+
+
+@media screen and (max-width: 550px) {
+    .promises {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        left:90px;
+        top: 800px ;
+        width: 100% ;
+        gap: 0px ;
+    }
+    .upper-image-content{
+        position: relative;
+        left: 15px;
+        top: 700px;
+        color: rgb(10, 10, 10);
+        padding: 10px;
+    }
+    .heading {
+        padding: 40px 0;
+        position: relative;
+        left: 10px;
+    }
+    
+    .heading p {
+        position: relative;
+        left: 114px;
+        font-family: 'Brush Script MT', cursive;
+        font-size: 30px;
+    }
+    
+    .heading h2 {
+        position: relative;
+        left: 35px;
+        margin-top: 30px;
+        font-size: 40px;
+    }
+    .tour-place {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 600px;
+        gap: 10px;
+    }
+    .back-image{
+        width: 0px;
+        height: 0px;
+        position: relative;
+        top: 400px;
+        background-image: url(https://worldwildschooling.com/wp-content/uploads/2024/01/12-Exotic-Beaches_Navagio-Zakynthos-Greece_evannovostro_Adobe-Stock-Photo_122264479.jpg);
+        background-repeat: no-repeat;
+        z-index: -3;
+    }
+    
+    .upper-color{
+        /* background-image: linear-gradient(90deg, #07e9e298, #5be79a8b);/ */
+        background-color: #2ebdc4 ;
+        opacity: 0.8;
+        z-index: 2;
+        position: relative;
+        top:400px;
+        height: 100%;
+        width: 100%;
+    }
+    .hotels{
+        position: relative;
+        top:-120px;
+        background-color: white;
+        z-index: 10;
+        width: 100%;
+        height: 760px;
+    }
+    .hotel{
+        position: relative;
+        top: 1386px;
+    }
+    .media{
+        position: relative;
+        top: 0px;
+    }
+    .scroller {
+        max-width: 1000px;
+        position: relative;
+        top: 2500px;
+        left: 13%;
+        background-color: white;
+        padding: 1rem;
+        height: 650px;
+      }
+      .restaurants{
+        position: relative;
+        top: 1800px;
+    }
+    .rest-con{
+        position: relative;
+        top: 663px;
+        padding-bottom: 30px;
+    }
+    .choose-us{
+        display: flex;
+        flex-direction: column;
+        width: 1000px;
+        gap: 70px;
+        position: relative;
+        top: 2467px;
+        left: 6px;
+    }
+    .service{
+        position: relative;
+        top: 0px;
+    }
+    .more{
+        position: relative;
+        top: 1068px;
+        bottom: 70px;
+        left: 114px;
+    }
+    .mobile-head{
+        position: relative;
+        top: 1418px;
+    }
+    .mobile-head p{
+        position: relative;
+        left: 38px;
+    }
+    .up-text{
+        position: relative;
+        top: 4000px;
+        left: 0;
+        text-align: center;
+        font-family: sans-serif;
+        font-weight: 200;
+        color: white;
+    }
+    .place-rest{
+        position: relative;
+        padding-bottom: 169px;
+     }
+    .down-more{
+        position: relative;
+        left: 100px;
+        top: 2450px;
+    }
+    .footer{
+        background-color: #222831;
+        width: 100%;
+        height: 400px;
+        position: relative;
+        top: 3700px;
+        /* top:-180px; */
+    }
+    .mobile-head2{
+        position: relative;
+        top: 650px;
+    }
+    .mobile-head2 p {
+        position: relative;
+        left: 78px;
+    }
+    .res{
+        height: 380px;
+        padding-bottom: 95px;
+    }
+    .footer-para{
+        position: relative;
+        width: 70%;
+        top: 3630px;
+        left: 280px;
+        color: rgb(129, 15, 15);
+    }
+}
